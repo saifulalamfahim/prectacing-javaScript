@@ -117,3 +117,25 @@ let age = 19;
 if (age >= 19) {
     console.log("he ami parsi");
 }
+
+let boyosh = 20;
+
+if (boyosh > 23) {
+    console.log("ami kisu bujhi nai");
+}
+else {
+    console.log("ami shob bujhi");
+}
+let aam = 34;
+let apple = 21;
+if (aam >30 && apple >10) {
+    console.log("logic kaj korse");
+} else {
+    console.log("na bujhi condition likhsi");
+}
+if (aam <32 || apple > 20) {
+    console.log("aam khaite moja");
+}
+else{
+    console.log("apple khaitge moja");
+}
