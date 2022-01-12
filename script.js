@@ -139,3 +139,61 @@ if (aam <32 || apple > 20) {
 else{
     console.log("apple khaitge moja");
 }
+
+if (aam == 4 && apple == 21) {
+    console.log("if Kam Kortase");
+}
+else if (aam == 14 && apple == 21) {
+    console.log("else if kam korse");
+} else {
+    console.log("kono kisui kam kore nai");
+}
+
+
+const cars = ["A", "B", "C", "D", "E"];
+
+for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i ]);
+}
+
+console.log("i am done");
+
+
+const person = {fName:"saiful", lName:"Alam", Age:41};
+
+for (let x in person) {
+    console.log(person[x]);
+}
+console.log("Now i am learning for in");
+
+
+const numbers1 = [45, 67, 87, 4, 32, 1, 42, 90, 12];
+
+for (let x in numbers1) {
+    console.log(numbers1[x]);
+}
+console.log("exploring something");
+
+const forOf = "sakib";
+
+for (let x of forOf) {
+    console.log(x);
+}
+
+console.log("working");
+
+const forOfNumber = [45, 67, 87, 4, 32, 1, 42, 90, 12];
+
+for (let x of forOfNumber){
+    console.log(x);
+}
+console.log("working again");
+
+let i2 = 0;
+let textWhile = "";
+
+while (i2 < 10) {
+    textWhile += "the number is " + i2;
+    i2++;
+}
+console.log(textWhile);
