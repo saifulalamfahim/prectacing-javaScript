@@ -197,3 +197,14 @@ while (i2 < 10) {
     i2++;
 }
 console.log(textWhile);
+
+
+const fruit = new Map();
+
+
+fruit.set("aplle", 500);
+fruit.set("banana", 500);
+fruit.set("orange", 500);
+fruit.set("mango", 500);
+
+console.log(fruit);
