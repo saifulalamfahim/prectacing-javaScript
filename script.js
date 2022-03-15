@@ -254,3 +254,9 @@ const api1 = document.querySelector(".api");
 localStorage.setItem("ghoru", "ksagol");
 api1.innerHTML = localStorage.getItem("ghoru");
 
+let file = "https://api.agify.io/?name=bella";
+const fetchApi = document.querySelector(".fetchApi");
+
+fetch (file)
+.then(x => x.text())
+.then(y => fetchApi.innerHTML = y);
