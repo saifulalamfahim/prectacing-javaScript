@@ -260,3 +260,30 @@ const fetchApi = document.querySelector(".fetchApi");
 fetch (file)
 .then(x => x.text())
 .then(y => fetchApi.innerHTML = y);
+
+// fetch api with text
+function getData(){
+    let url = "https://api.agify.io/?name=bella";
+    console.log("started getData");
+    fetch(url)
+    .then((response)=>{
+        return response.text();
+    }).then((data)=>{
+        console.log(data);
+    })
+}
+getData();
+
+
+// fetch api with json
+function getDataJson(){
+    let url = "https://api.github.com/users";
+    console.log("started getData");
+    fetch(url)
+    .then((response)=>{
+        return response.json();
+    }).then((data)=>{
+        console.log(data);
+    })
+}
+getDataJson();
