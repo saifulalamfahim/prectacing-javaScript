@@ -208,3 +208,49 @@ fruit.set("orange", 500);
 fruit.set("mango", 500);
 
 console.log(fruit);
+
+// practicing classList 
+const myList = document.querySelector(".myList");
+const classBTN = document.querySelector(".classBTN");
+const classBTN1 = document.querySelector(".classBTN1");
+
+
+classBTN.onclick = () => {
+    myList.classList.add("myStyle")
+};
+classBTN1.onclick = () => {
+    myList.classList.remove("myStyle")
+};
+
+
+hello = function() {
+    return"hellow world";
+}
+console.log(hello);
+hello1 = () => {
+    return "hello earth";
+}
+console.log(hello1);
+
+
+let text89 = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+
+const obj = JSON.parse(text89);
+console.log(obj);
+console.log (obj.employees[0]);
+console.log (obj.employees[0].firstName);
+console.log (obj.employees[1]);
+console.log (obj.employees[1].firstName);
+
+
+
+// for api
+const api1 = document.querySelector(".api");
+
+localStorage.setItem("ghoru", "ksagol");
+api1.innerHTML = localStorage.getItem("ghoru");
+
